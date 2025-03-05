@@ -1,0 +1,26 @@
+---
+title: "Evaluación MT-1"
+author: "Sofía Cota"
+date: "2025-03-05"
+output: html_document
+---
+```{r}
+Vector_A <- c("Border_Coli", "Chihuahua", "Huskey", "Corgie",
+              "Labrador") 
+Vector_B <- c(3, 4, 8, 1, 6) #Numeros favs
+Vector_C <- c(4, 7, 5, 1.5, 7) 
+Raza_perros <- data.frame(Raza=Vector_A, 
+                   Total_perros =Vector_B, 
+                      Edad_prom=Vector_C)
+Raza_perros
+
+```
+
+```{r}
+Prom_total <- mean(Raza_perros$Total_perros)
+Prom_edad <- mean(Raza_perros$Edad_prom)
+
+Prom_edad
+Prom_total
+```
+
